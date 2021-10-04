@@ -1,0 +1,485 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* variabels */
+:root{
+    --primary:rgb(237,86,58);
+    --textdark:rgb(35,45,56);
+    --textlight:rgb(164,164,164);
+}
+/* commmon-classes */
+body{
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.container2{
+    max-width: 1000px;
+    padding: 0 32px;
+    margin: 0 auto;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+strong{
+    color: var(--primary);
+}
+
+/* flex */
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-10{
+    flex: 0 1 10%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+.flex-20{
+    flex: 0 1 20%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.flex-50{
+    flex: 0 1 47%;
+}
+.flex-50-2{
+    flex: 0 1 50%;
+}
+.flex-60{
+    flex: 0 1 55%;
+}
+.display-flex{
+    display: flex;
+}
+.item-start{
+    align-items: flex-start;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-column{
+    display: inline-flex;
+    flex-direction: column;
+}
+/* buttons */
+.btn{
+    display: inline-block;
+    padding: 6px  8px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.7;
+    background-color: var(--primary);
+}
+.btn:hover{
+    background-color: rgb(248, 98, 71);
+}
+/* margin */
+.margin-bottom{
+    margin-bottom: 25px;
+}
+.margin-bottom-70{
+    margin-bottom: 70px;
+}
+.margin-left{
+    margin-right: 20px;
+}
+.margin-right{
+    margin-right: 7px;
+}
+/* hero-header */
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 3px 135px;
+    color: white;
+    background-color: rgba(103,109,117,0.7);
+}
+header a{
+    color:white;
+}
+.header-btn{
+    margin-left: 20px;
+    background-color: var(--primary);
+    padding: 7px 8px;
+}
+.header-btn:hover{
+    background-color: rgb(248, 98, 71);
+}
+.brand a{
+    font-weight: 700;
+    font-size: 30px;
+}
+.brand-icon li{
+    font-weight: 500;
+    margin-left: 30px;
+}
+.brand-icon li a:hover{
+    color: var(--primary);
+}
+/* hero-videio */
+.hero{
+    position: relative;
+}
+.hero video{
+    width: 100%;      
+}
+.video-overley{
+    background-color: rgba(44,55,68,0.7);
+    position: absolute;
+    height: 110vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0ch;
+}
+/* hero-heading */
+.hero-heading{
+    top: 50%;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+}
+.hero-heading cite{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.hero-heading h1{
+    color: white;
+     font-weight: 900;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+/* section-program */
+.program{
+    margin-top: 70px;
+    text-align: center;
+}
+.program h2{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.program p{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: var(--textlight);
+    font-size: 16px;
+}
+/* about-section */
+.about{
+    max-width: 1000px;
+    padding: 0 32px;
+    margin: 0 auto;
+    width: 100%;
+}
+.fitness{
+    text-align: left;
+    margin-left: 15px;
+}
+.fitness h3{
+    font-size: 20px;
+}
+.fitness p{
+    color: var(--textlight);
+}
+.fitness strong{
+    text-transform: uppercase;
+}
+.fitness strong:hover{
+    text-decoration: underline;
+    color: var(--primary);
+}
+.fitness small{
+    color: rgb(32,137,254);
+}
+/* section-think */
+.Think{
+    margin-top: 40px;
+    margin-bottom: 70px;
+    background: url(../media/cta-bg.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    height: 290px;
+}
+.Think h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+.Think p{
+    margin-bottom: 12px;
+    color: var(--textlight);
+}
+/* section-our */
+.Our{
+    text-align: center;
+}
+.Our h2{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.Our p{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: var(--textlight);
+    font-size: 16px;
+}
+/* section-traing-class */
+.col{
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 28px;
+    box-shadow: 2px 0px 3px 1px rgba(0,0,0,0.1);
+    margin-bottom: 17px;
+}
+.col h2{
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 15px;
+}
+.col:hover{
+    background-color: var(--primary);
+}
+.view-btn{
+    border-radius: 4px;
+    text-align: center;
+    background-color: var(--primary);
+    padding: 13px 28px;
+    font-size: 18px;
+    color: white;
+}
+.training-first h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.training-first img{
+    width: 100%;
+}
+.training-first p{
+    color: var(--textlight);
+}
+/* section-schedule */
+.tabel-schedule{
+    background: url(../media/schedule-bg.jpg) no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+    width: 100%;
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
+.schedule{
+    /* padding-top: 99px; */
+    padding-bottom: 50px;
+    text-align: center;
+}
+.schedule h2{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.schedule p{
+    color: var(--textlight);
+    font-size: 16px;
+}
+.days p{
+    margin-left: 10px;
+    color: white;
+    padding-bottom: 40px;
+}
+table{
+     padding-bottom: 120px; 
+    border: 1px solid white;
+}
+tr{
+    color: white;
+    border: 1px solid white;
+}
+td{
+    padding: 40px;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+/* expert-trainer-section */
+
+.trainer{
+    padding-top: 99px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.trainer h2{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.trainer p{
+    color: var(--textlight);
+    font-size: 16px;
+}
+/* trainer-names */
+.bret{
+    display: inline-block;
+    padding: 25px 30px;
+    box-shadow: 1px 0px 6px 1px rgba(0,0,0,0.1);
+}
+.bret img{
+    width: 100%;
+}
+.bret h2{
+    text-align: left;
+    font-size: 20px;
+}
+.bret p{
+    text-align: left;
+    color: var(--textlight);
+}
+.bret i{
+    margin-right: 10px;
+    margin-top: 10px;
+    color: rgb(35,45,56);
+}
+.bret i:hover{
+    color: var(--primary);
+}
+/* map */
+.map{
+    position: relative;
+    margin-top: 70px;
+}
+.map img{
+    width: 100%;
+    line-height: 0;
+}
+/* form */
+form{
+    margin-top: 45px;
+    margin-right: 66px;
+    width: 80%;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 3px;
+    background-color: white;
+    height: 350px;
+    padding: 30px 20px;
+    display: block;
+}
+.form-parent{
+    position: relative;
+}
+.form-control{
+    margin: 20px 0;
+    display: block;
+    width: 97%;
+}
+input{
+    width: 48%;
+}
+textarea{
+    width: 97%;
+    display: block;
+    
+}
+.form-btn{
+    display: inline-block;
+    margin-top: 10px;
+}
+/* footer */
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+
+
