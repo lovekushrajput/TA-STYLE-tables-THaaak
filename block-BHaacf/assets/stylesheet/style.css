@@ -315,8 +315,8 @@ header a{
     font-size: 20px;
     margin-left: 15px;
 }
-.col:hover{
-    background-color: var(--primary);
+.col h2:hover{
+    color: var(--primary);
 }
 .view-btn{
     border-radius: 4px;
